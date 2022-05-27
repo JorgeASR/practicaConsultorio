@@ -32,7 +32,7 @@ public class ListaCitas {
 		}
 
 		/*
-		 * Si aux es igual a 1 significa que hay un paciente en la lita con cita para el
+		 * Si aux es igual a 1 significa que hay un paciente en la lista con cita para el
 		 * mismo dia que x. Si aux es igual a 0 significa que no hay otros pacientes en
 		 * la lista con cita para el mismo dia que x *
 		 */
