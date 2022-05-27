@@ -29,7 +29,7 @@ public class FechaConsulta {
 
 	/*
 	 * Esta funcion valida la entrada del dia segun el mes y el año Los meses 1, 3,
-	 * 5, 7, 8, 10 y 12 tienen 31 dias Los meses 5, 6, 9 y 11 tienen 30 dias Febrero
+	 * 5, 7, 8, 10 y 12 tienen 31 dias Los meses 5, 6, 9 y 11 tienen 30 dias. Febrero
 	 * tiene 28 dias en los años tropicales y 29 en los años bisietos
 	 */
 	public byte validarEntradaDia(byte d, byte m, short a) {
@@ -58,7 +58,7 @@ public class FechaConsulta {
 	}
 
 	public String toString() {
-		return dia + "/" + mes + "/" + "/" + anio;
+		return dia + "/" + mes + "/" + anio;
 	}
 
 }

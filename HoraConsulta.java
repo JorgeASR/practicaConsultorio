@@ -37,7 +37,12 @@ public class HoraConsulta {
 	}
 
 	public String toString() {
-		return h + ":" + m;
+		//Por razones de formato si m es menor a 10 se imprime un 0 adelante
+		//Para tener por ejemplo 5:05 en lugar de 5:5
+		if (m < 10)
+			return h + ":0" + m;
+		else
+			return h + ":" + m;
 	}
 
 }

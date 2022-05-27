@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class ListaCitas {
 
+	private static String nombreDoctorDelConsultorio = "Gregorio Casas";
 	private ArrayList<Paciente> listaCitas;
 
 	public ListaCitas() {
@@ -45,21 +46,10 @@ public class ListaCitas {
 		}
 	}
 
-	public String toStringPacientesPorNumCitas(Paciente a, Paciente b) {
-		//Si a tiene mas consultas que b
-		if (a.getNumConsultas() > b.getNumConsultas())
-			return "1- " + a.getNombre() + " " + a.getNumConsultas() + " Consultas 2-" + b.getNombre() + " "
-					+ b.getNumConsultas() + " Consultas";
-		
-		//Si a y b tiene igual numero de consultas
-		else if (a.getNumConsultas() == b.getNumConsultas())
-			return "Los pacientes: " + a.getNombre() + " y " + b.getNombre() + " han ido a " + a.getNumConsultas()
-					+ " Consultas";
-		
-		//Si b tiene mas consultas que a
-		else
-			return "1- " + b.getNombre() + " " + b.getNumConsultas() + " Consultas 2-" + a.getNombre() + " "
-					+ a.getNumConsultas() + " Consultas";
+	public void mostrarPacientesPorNumCitas(Paciente a, Paciente b) {
+		System.out.println("En el consultorio del doctor " + nombreDoctorDelConsultorio + " estos pacientes ");
+		System.out.println("se organizan de esta manera segun el numero de citas:");
+		System.out.println(Paciente.toStringPacientesPorNumCitas(a, b));
 	}
 
 }
