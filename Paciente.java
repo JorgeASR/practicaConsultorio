@@ -28,8 +28,8 @@ public class Paciente {
 		this.numHistoria=numHistoria;
 		this.numConsultas=numConsultas;
 		this.edad=edad;
-		this.fechaCita=f;
-		this.horaCita=h;
+		fechaCita=f;
+		horaCita=h;
 	}
 
 	public void setNobre(String n) {
